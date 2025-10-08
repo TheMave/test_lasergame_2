@@ -1,0 +1,6 @@
+on: push
+jobs:
+  hello_action_2:
+    runs-on: ubuntu-latest
+    steps:
+      - run : node --version
