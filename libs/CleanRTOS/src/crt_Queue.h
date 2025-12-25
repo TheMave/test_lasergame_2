@@ -43,8 +43,6 @@ namespace crt
             }
             else
             {
-				// Explicit clear needed, just in case wait_any is used with the queue.
-				// (which does not auto-clear the eventbits, opposite to wait_all)
                 pTask->clearEventBits(Waitable::getBitMask());
             }
 			assert(rc == pdPASS);
